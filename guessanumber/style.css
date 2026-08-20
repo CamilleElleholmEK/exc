@@ -1,0 +1,76 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+body {
+  background-color: black;
+}
+
+#confettibox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: pink;
+  color: black;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.card p {
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+}
+
+.card h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+}
+
+.card button {
+  margin-top: 10px;
+  font-family: sans-serif;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: rgb(255, 144, 162);
+  border: none;
+  padding: 5px;
+}
+
+button:hover {
+  background-color: rgb(252, 135, 155);
+  cursor: pointer;
+  transform: scale(98%);
+}
+
+input {
+  font-family: sans-serif;
+  border-radius: 5px;
+  padding: 5px;
+  border: solid 2px rgb(252, 135, 155);
+}
