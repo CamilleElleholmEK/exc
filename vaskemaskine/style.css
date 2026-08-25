@@ -1,0 +1,28 @@
+.crumbBox {
+  display: flex;
+  align-items: center;
+  padding-left: 0px;
+  list-style: none;
+}
+
+.crumbBox a:first-child {
+  margin-left: 0;
+}
+
+body {
+  margin: 20px;
+}
+
+.crumbBox a,
+.crumbBox p {
+  margin: 0 8px;
+  color: #333;
+}
+
+.crumbBox p {
+  color: #666;
+}
+
+.crumbBox a:hover {
+  scale: 0.95;
+}
