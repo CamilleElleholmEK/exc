@@ -32,51 +32,58 @@ const tbodyPointer = document.querySelector("tbody");
 const btns = document.querySelectorAll("#btnBox button");
 showTheseVehicles(vehicles);
 
+// Funktion der håndterer markeringen af den aktive knap
+// Funktionen bruges i hver eventlistener med e.target som clicked parameter
 function activeBtn(clicked) {
   btns.forEach((btn) => btn.classList.remove("active"));
   clicked.classList.add("active");
 }
 
-// Alle el køretøjer
+// Alle el køretøjer - selve filteret
 function isEl(vehicle) {
   return vehicle.isElectric === true;
 }
+// Når man trykker på el knap, viser den køretøjerne i det filtrerede array
 const isElFiltered = vehicles.filter(isEl);
 document.querySelector("#elBtn").addEventListener("click", (e) => {
   activeBtn(e.target);
   showTheseVehicles(isElFiltered);
 });
 
-// Mere end to sæder
+// Mere end to sæder  - selve filteret
 function moreSeats(vehicle) {
   return vehicle.passengers > 2;
 }
+// Når man trykker på flere sæder knap, viser den køretøjerne i det filtrerede array
 const moreSeatsFiltered = vehicles.filter(moreSeats);
 document.querySelector("#seatsBtn").addEventListener("click", (e) => {
   activeBtn(e.target);
   showTheseVehicles(moreSeatsFiltered);
 });
 
-// Jonas' el køretøjer
+// Jonas' el køretøjer  - selve filteret
 function elJonas(vehicle) {
   return vehicle.ownedBy === "Jonas" && vehicle.isElectric === true;
 }
+// Når man trykker på el og Jonas knap, viser den køretøjerne i det filtrerede array
 const elJonasFiltered = vehicles.filter(elJonas);
 document.querySelector("#jonasBtn").addEventListener("click", (e) => {
   activeBtn(e.target);
   showTheseVehicles(elJonasFiltered);
 });
 
-// Rugbrødsmotor og minimum 2 sæder
+// Rugbrødsmotor og minimum 2 sæder  - selve filteret
 function rugbrod(vehicle) {
   return vehicle.fuel === "Rugbrød" && vehicle.passengers > 1;
 }
+// Når man trykker på rugbrød knap, viser den køretøjerne i det filtrerede array
 const rugbrodFiltered = vehicles.filter(rugbrod);
 document.querySelector("#rugbrodBtn").addEventListener("click", (e) => {
   activeBtn(e.target);
   showTheseVehicles(rugbrodFiltered);
 });
 
+// Når man trykker på vis alle knap, viser den køretøjerne i det originale array uden filtrering
 document.querySelector("#allBtn").addEventListener("click", (e) => {
   activeBtn(e.target);
   showTheseVehicles(vehicles);
