@@ -10,3 +10,14 @@ console.log(capName1);
 console.log(capName2);
 console.log(capName3);
 console.log(newName);
+
+const navn = "bIrGiTtE";
+
+const cap = navn.substring(0, 1).toUpperCase();
+const rest = navn.substring(1).toLowerCase();
+
+const cappedNavn = cap + rest;
+
+console.log(cap);
+console.log(rest);
+console.log(cappedNavn);
