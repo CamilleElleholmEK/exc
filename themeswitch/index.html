@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="theme.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="theme.js" defer></script>
+  </head>
+  <body data-theme="light">
+    <header class="header">
+      <div class="logo">DummySite</div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#hero">Forside</a></li>
+          <li><a href="#om">Om</a></li>
+          <li><a href="#kort">Kort</a></li>
+          <li><a href="#data">Data</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+      <div id="select-box">
+        <label for="theme-select">Choose a theme:</label>
+        <select name="theme" id="theme-select">
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+          <option value="hawaii">Hawaii</option>
+        </select>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero" class="hero">
+        <h1>Velkommen til Dummy Siden</h1>
+        <p>
+          Dette er en tekst i hero-sektionen, som kan bruges til at teste
+          typografi, spacing og layout.
+        </p>
+        <button class="btn btn-primary">Kom i gang</button>
+      </section>
+
+      <!-- Om-sektion -->
+      <section id="om" class="about">
+        <h2>Om siden</h2>
+        <p>
+          Her kommer noget længere brødtekst, som kan bruges til at teste
+          linjehøjde, tekstbredde og generel læsbarhed. Denne sektion har typisk
+          ét eller flere afsnit med almindelig tekst.
+        </p>
+        <p>
+          Endnu et afsnit, så der er noget at arbejde med i forhold til margin
+          mellem paragraffer.
+        </p>
+      </section>
+
+      <!-- Card-grid -->
+      <section id="kort" class="card-section">
+        <h2>Kort-oversigt</h2>
+        <div class="card-grid">
+          <div class="card">
+            <div class="card-image">Billede</div>
+            <h3>Kort 1</h3>
+            <p>Kort beskrivelse af det første element i grid'et.</p>
+            <button class="btn btn-secondary">Læs mere</button>
+          </div>
+
+          <div class="card">
+            <div class="card-image">Billede</div>
+            <h3>Kort 2</h3>
+            <p>Kort beskrivelse af det andet element i grid'et.</p>
+            <button class="btn btn-secondary">Læs mere</button>
+          </div>
+
+          <div class="card">
+            <div class="card-image">Billede</div>
+            <h3>Kort 3</h3>
+            <p>Kort beskrivelse af det tredje element i grid'et.</p>
+            <button class="btn btn-secondary">Læs mere</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Data-sektion med tabel -->
+      <section id="data" class="data-section">
+        <h2>Eksempel-data</h2>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Navn</th>
+              <th>Kategori</th>
+              <th>Pris</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Element A</td>
+              <td>Kategori 1</td>
+              <td>99 kr.</td>
+            </tr>
+            <tr>
+              <td>Element B</td>
+              <td>Kategori 2</td>
+              <td>149 kr.</td>
+            </tr>
+            <tr>
+              <td>Element C</td>
+              <td>Kategori 1</td>
+              <td>79 kr.</td>
+            </tr>
+            <tr>
+              <td>Element D</td>
+              <td>Kategori 2</td>
+              <td>75 kr.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Kontaktformular -->
+      <section id="kontakt" class="contact-section">
+        <h2>Kontakt</h2>
+        <form class="contact-form">
+          <label for="name">Navn</label>
+          <input type="text" id="name" name="name" placeholder="Dit navn" />
+
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="din@email.dk"
+          />
+
+          <label for="message">Besked</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            placeholder="Skriv din besked her"
+          ></textarea>
+
+          <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="site-footer">
+      <nav class="footer-nav">
+        <a href="#hero">Forside</a>
+        <a href="#om">Om</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+      <p>&copy; 2026 DummySite. Alle rettigheder forbeholdes.</p>
+    </footer>
+  </body>
+</html>

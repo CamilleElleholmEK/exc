@@ -1,0 +1,40 @@
+/* dataset light */
+/* #FBFAF8 */
+/* #E7DECD */
+/* #6D597A */
+/* #CB9CF2 */
+/* #040F0F */
+
+[data-theme="light"] {
+  --header-color: #6d597a;
+  --main-color: #fceffc;
+  --footer-color: #cb9cf2;
+  --contrast-color: #ede1ed;
+  --text-color: #040f0f;
+  --card-color: #6d597a;
+  --btn-color: #cb9cf2;
+}
+
+/* dataset dark */
+[data-theme="dark"] {
+  --header-color: #8c769b;
+  --main-color: #131113;
+  --footer-color: #b782e3;
+  --contrast-color: #201c20;
+  --text-color: #ecefef;
+  --card-color: #8c769b;
+  --btn-color: #b782e3;
+}
+
+/* dataset hawaii */
+[data-theme="hawaii"] {
+  --header-color: #f18701;
+  --main-color: #e8f6c3;
+  --footer-color: #ff3864;
+  --contrast-color: #d2e0ab;
+  --text-color: #02020a;
+  --card-color: #f18701;
+  --btn-color: #ff3864;
+}
+
+/* generel styling */
