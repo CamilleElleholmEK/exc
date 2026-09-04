@@ -1,5 +1,5 @@
 const endpoint = `https://kea-alt-del.dk/kata-distortion/`;
-const p = document.querySelector("p");
+const tal = document.querySelector("span");
 const h1 = document.querySelector("h1");
 
 function loadJSON(endpoint, callback) {
@@ -10,7 +10,7 @@ function loadJSON(endpoint, callback) {
 
 function JSONLoaded(jsonData) {
   console.log(jsonData.inQueue);
-  p.textContent = jsonData.inQueue;
+  tal.textContent = jsonData.inQueue;
 }
 // loadJSON(endpoint, JSONLoaded);
 setInterval(() => loadJSON(endpoint, JSONLoaded), 10000);
